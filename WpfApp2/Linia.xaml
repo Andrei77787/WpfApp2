@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.Kwadrat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="Kwadrat" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Линейное уравнение" FontSize="30" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+        <TextBlock Text="Введите k" FontSize="20" Margin="0,10,700,-40" Grid.Row="1" ></TextBlock>
+        <TextBox x:Name="k" Margin="105,15,469,-40" Grid.Row="1" ></TextBox>
+        <TextBlock Text="Введите b" FontSize="20" Margin="0,45,700,-75" Grid.Row="1" ></TextBlock>
+        <TextBox x:Name="b" Margin="105,48,469,-73" Grid.Row="1" ></TextBox>
+        <TextBlock x:Name="result" Text="Результат" Margin="355,19,29,-110" Grid.Row="1"></TextBlock>
+        <Button Content="Посчитать" Margin="10,107,469,-178" Grid.Row="1" Click="Button_Clic_4"></Button>
+    </Grid>
+</Window>
